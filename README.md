@@ -5,7 +5,8 @@ This course assignment for Paralell Algorithms and Architectures class implement
 - The goal is to compute behaviour of electromagnetic field during propagation through a phase-modulating optical system using GPU.  
 - The computation consists of elementwise complex matrix multiplication and 2D FFT and IFFT operations.  
 - For aforementioned operations cuBLAS and cuFFT library should be used.
-- Simulation scheme:  
+- Simulation scheme:  <p align="center">
+  <img src="./outputs/simulace_diagram.png" alt="C" width="50%"></p>  
 
 ### Implementation  
 Sequential implementation: __propagation_in_c.c__   
