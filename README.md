@@ -1,2 +1,2 @@
-# Paralellisation of spatial phase modulation simulation using cuda
+# Paralellization of spatial phase modulation simulation using cuda
 
