@@ -1,1 +1,2 @@
-# PAA_cuda
+# Paralellisation of spatial phase modulation simulation using cuda
+
