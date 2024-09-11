@@ -12,7 +12,7 @@ This course assignment for Paralell Algorithms and Architectures class implement
 Sequential implementation: __propagation_in_c.c__   
 GPU implementation in CUDA: __propagation_cuda.cu__   
 
-GPU:  NVIDIA T1000 8GB - 896 CUDA cores:  
+GPU:  [NVIDIA T1000 8GB](https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/productspage/quadro/quadro-desktop/nvidia-t1000-datasheet-1987414-r4.pdf) - 896 CUDA cores:  
 _Max threads per block: 1024_  
 _Max block dimensions: 1024 x 1024 x 64_  
 _Max grid dimensions: 2147483647 x 65535 x 65535_  
