@@ -19,7 +19,21 @@ Max grid dimensions: 2147483647 x 65535 x 65535
   
 Profiling of the c code has been done with gprof tool. Due to user access issues NVIDIA Nsight tool could not be used for CUDA code profiling. Function-timing using cuda_runtime has been used instead.
 
-### Simulation results
+### Simulation results   
+__C code results__
+<p align="center">
+  <img src="./outputs/c_ones.png" alt="C" width="33%">
+  <img src="./outputs/cuda_ones.png" alt="Cuda" width="33%">
+  <img src="./outputs/cuda_ones.png" alt="Cuda" width="33%">
+</p>  
+
+__Results obtained by CUDA__
+<p align="center">
+  <img src="./outputs/c_ones.png" alt="C" width="33%">
+  <img src="./outputs/cuda_ones.png" alt="Cuda" width="33%">
+  <img src="./outputs/cuda_ones.png" alt="Cuda" width="33%">
+</p>
+
 ### Performance results
 ### Conclusion
 
