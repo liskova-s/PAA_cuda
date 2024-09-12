@@ -238,13 +238,13 @@ int main() {
     dim3 numBlocks( (M + threadsPerBlock.x - 1) / threadsPerBlock.x, 
                     (M + threadsPerBlock.y - 1) / threadsPerBlock.y);
 
-    init_fft_u<<<numBlocks, threadsPerBlock>>>(d_u0, d_u_real, d_u_imag, M);
-    init_fft_u<<<numBlocks, threadsPerBlock>>>(d_spatial, d_sp_real, d_sp_imag, M);
+    init_fft_u<<<numBlocks, threadsPerBlock>>>(d_u0, d_u_real, d_u_imag, M); CUDA_CHECK("init_fft_u(u0)");
+    init_fft_u<<<numBlocks, threadsPerBlock>>>(d_spatial, d_sp_real, d_sp_imag, M); CUDA_CHECK("init_fft_u(d_spatial)");
 
-    propagate(d_u0, d_h, d_C, M);
+    propagate(d_u0, d_h, d_C, M); 
 
     //phase modulation
-    elementwise_multiply<<<(M * M + 255) / 256, 256>>>(d_C1, d_C, d_spatial, M * M);
+    elementwise_multiply<<<(M * M + 255) / 256, 256>>>(d_C1, d_C, d_spatial, M * M); CUDA_CHECK("multiply");
    
     propagate(d_C1, d_h, d_C2, M);
 
