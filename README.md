@@ -8,7 +8,7 @@ This course assignment for Paralell Algorithms and Architectures class implement
 - Simulation scheme:  <p align="center">
   <img src="./outputs/simulace_diagram.png" alt="C" width="50%"></p>  
 
-### Implementation  
+## Implementation  
 Sequential implementation: __propagation_in_c.c__   
 GPU implementation in CUDA: __propagation_cuda.cu__   
 
@@ -36,7 +36,9 @@ __Results obtained by CUDA__
   <img src="./outputs/cuda_quadratic.png" alt="Cuda" width="33%">
 </p>
 
-### Performance results
-### Conclusion
+## Performance results
+<p align="center">
+  <img src="./outputs/speedup_figure.png" alt="C" width="80%">
+</p>
 
 
